@@ -52,6 +52,7 @@ class ProdiController extends Controller
     public function show(Prodi $prodi)
     {
         //
+
     }
 
     /**

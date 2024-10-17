@@ -9,8 +9,13 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+// Get
 Route::get('/fakultas', [FakultasController::class, 'index']);
 Route::get('/prodi', [ProdiController::class, 'index']);
+
+// Show
+Route::get('/fakultas/{fakutlas}', [FakultasController::class, 'show']);
+
 Route::post('/fakultas', [FakultasController::class, 'store']);
 Route::post('/prodi', [ProdiController::class, 'store']);
 Route::patch('/fakultas/{fakultas}', [FakultasController::class, 'update']);
