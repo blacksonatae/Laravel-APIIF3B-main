@@ -14,7 +14,8 @@ Route::get('/fakultas', [FakultasController::class, 'index']);
 Route::get('/prodi', [ProdiController::class, 'index']);
 
 // Show
-Route::get('/fakultas/{fakutlas}', [FakultasController::class, 'show']);
+Route::get('/fakultas/{fakultas}', [FakultasController::class, 'show']);
+
 
 Route::post('/fakultas', [FakultasController::class, 'store']);
 Route::post('/prodi', [ProdiController::class, 'store']);
